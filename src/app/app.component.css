@@ -1,0 +1,48 @@
+.container {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-row {
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.row {
+  margin-bottom: 1.5rem;
+}
+
+.task-list-empty {
+  justify-content: center;
+}
+
+form {
+  text-align: center;
+}
+
+.btn,
+.btn:disabled:hover {
+  background-color: #009688;
+  border-color: #009688;
+  margin-left: 2rem;
+}
+
+.btn:hover {
+  background-color: #00796b;
+  border-color: #00796b;
+}
+
+.form-control:focus {
+  border-color: #009688;
+}
+
+i {
+  padding-right: 0.5rem;
+}
+
+h5 {
+  color: #ccc;
+  text-align: center;
+  margin-top: 3rem;
+}

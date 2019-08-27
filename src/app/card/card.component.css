@@ -1,0 +1,31 @@
+.row-margin {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  border-radius: 0;
+  cursor: pointer;
+  width: 18rem;
+}
+
+.card,
+.card-footer {
+  background-color: #ffffa5;
+  border: none;
+}
+
+.card.completed,
+.card.completed .card-footer,
+.card.completed i {
+  background-color: #eee;
+  color: #ccc;
+}
+
+.card-footer {
+  text-align: right;
+}
+
+i {
+  color: #cc0000;
+  padding-right: 0.5rem;
+}

@@ -1,0 +1,15 @@
+<div class="col-sm-3 row-margin">
+  <div class="card" (click)="statusToggle()" [class.completed]="task.completed">
+    <div class="card-body">
+      <p class="card-title">{{ task.content }}</p>
+    </div>
+    <div class="card-footer">
+      <span *ngIf="!task.completed"
+        ><fa-icon [icon]="faTimes"></fa-icon> Not Complete</span
+      >
+      <span *ngIf="task.completed"
+        ><fa-icon [icon]="faCheck"></fa-icon> Completed</span
+      >
+    </div>
+  </div>
+</div>
