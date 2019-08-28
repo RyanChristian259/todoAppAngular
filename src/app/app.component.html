@@ -30,6 +30,6 @@
   </div>
 
   <div class="row">
-    <app-card *ngFor="let task of tasks" [task]="task"></app-card>
+    <app-card *ngFor="let task of tasks, let i = index" [task]="task" [cardIndex]="i" (deleteTaskEmitter)="deleteTask(task)"></app-card>
   </div>
 </div>

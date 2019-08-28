@@ -2,6 +2,7 @@
   <div class="card" (click)="statusToggle()" [class.completed]="task.completed">
     <div class="card-body">
       <p class="card-title">{{ task.content }}</p>
+      index = {{i}}
     </div>
     <div class="card-footer">
       <span *ngIf="!task.completed"
@@ -10,6 +11,8 @@
       <span *ngIf="task.completed"
         ><fa-icon [icon]="faCheck"></fa-icon> Completed</span
       >
+      <button (click)="deleteTask(task)"> Delete Task</button>
+
     </div>
   </div>
 </div>

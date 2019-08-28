@@ -7,12 +7,18 @@ import { Task } from '@app/models/tasks';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  public currentTask = new Task(null, false);
+  public currentTask = new Task(null, false, null);
   public tasks: Task[] = [];
 
   public addTask(): void {
-    const task = new Task(this.currentTask.content, this.currentTask.completed);
+    const task = new Task(this.currentTask.content, this.currentTask.completed, null);
     this.tasks.push(task);
     this.currentTask.content = null;
+  }
+
+  public deleteTask(task) {
+    this.tasks = this.tasks.filter((returnTask) => {
+      return this.tasks[returnTask.index] !== this.tasks[task.index];
+    });
   }
 }
